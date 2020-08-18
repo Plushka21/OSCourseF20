@@ -1,9 +1,0 @@
-    1  sudo apt-get install gcc
-    2  mkdir ~/week1
-    3  cd ~/week1
-    4  gedit & ex1.txt
-    5  gedit ex1.txt
-    6  gedit ex2.txt
-    7  cd ~
-    8  ls /usr/bin | grep gcc | sort -r > ~/week1/ex1.txt
-    9  history>~/week1/ex2.txt
