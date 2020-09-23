@@ -1,3 +1,6 @@
+// Anton Buguev BS19-02
+// a.buguev@innopolis.university
+
 #include <stdio.h>
 #include <stdlib.h>
 
