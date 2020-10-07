@@ -1,0 +1,9 @@
+Anton Buguev BS19-02
+a.buguev@innopolis.university
+
+We have 16-bit virtual addresses and 8KB pages.
+1) 8KB = 8192 = 2^13 => offset is 13bit
+2) 16bit - 13bit = 3bit - for page number
+3) 2^3 = 8 pages
+
+Answer: 8 pages.

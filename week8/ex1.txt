@@ -1,0 +1,7 @@
+Anton Buguev BS19-02
+a.buguev@innopolis.university
+
+              total        used        free      shared  buff/cache   available
+Mem:          3,8Gi       1,0Gi       1,2Gi        20Mi       1,6Gi       2,6Gi
+Swap:         923Mi          0B       923Mi
+Total:        4,7Gi       1,0Gi       2,1Gi
