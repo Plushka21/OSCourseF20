@@ -1,0 +1,16 @@
+Anton Buguev BS19-02
+a.buguev@innopolis.university
+
+Let us use 10 page frames.
+
+
+Let us consider sequnce:
+1 1 1 1 1 1 1 2 1 1
+
+In this case we will have 8 hits and 2 misses and ratio hit/miss = 4. It means that if we have big amount of the same reference coming one by one, number of hits will increase that will result to increse of ratio hit/miss.
+
+
+And if we have sequence:
+1 2 3 4 5 6 7 8 9 10
+
+We will have 0 hits and 10 misses and ratio hit/miss = 0. So if we have a lot of new references that are not present in a table number of misses will increase that will result to dicrese of ratio hit/miss.
