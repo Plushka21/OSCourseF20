@@ -1,0 +1,9 @@
+1) Initially file _ex3.txt has these permissions: -rw-rw-r--
+
+2) To remove execution for everybody we can write command 'chmod 666 _ex3.txt' and these ar epermission for _ex3.txt after that: -rw-rw-rw-. So now everybody can read and write to this file.
+
+3) To grant all premissions to owner and others (not group) we need to write command 'chmod 707 ex3.txt' and these are permissions after that: -rwx---rwx.
+
+4) - 660 for ex3.txt means that only owner and group can read this file and write something to it but cannot execute it and all others cannot do anything with this file: -rw-rw----.
+   - 775 for ex3.txt means that owner and group can do anything with this file (read, write, execute) and others can read this file and execute it: -rwxrwxr-x
+   - 775 for ex3.txt means that owner, group and others can do anything with this file: -rwxrwxrwx.

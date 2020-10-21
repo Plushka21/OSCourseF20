@@ -1,0 +1,10 @@
+1) Created file.txt in week01 directory and accesses it to the _ex2.txt in week10 directory
+
+2)Found i-node of file.txt using 'ls -i file.txt':
+27 file.txt
+
+3)Traced all links to file.txt using 'find -inum 27':
+./Desktop/OS/week10/_ex2.txt
+./Desktop/OS/week01/file.txt
+
+4)Removed all files with i-node 27 using 'find -inum 27 -exec rm {} \;'
