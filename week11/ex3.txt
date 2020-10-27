@@ -1,0 +1,16 @@
+In first example of code output is the following:
+
+Hello
+Hello // 2 lines with Hello
+
+While in second example it is the following:
+
+Hello
+
+      // Hello and 2 empty lines
+
+The output differs because of \n in printf() function.
+
+In first case the buffer is not freed after printf() and thus fork() copies everything and Hello is printed again.
+
+In second case printf() is called, cursors moved to the nex line, buffer is freed and fork() is called that prints another empty line.
