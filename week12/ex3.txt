@@ -1,0 +1,57 @@
+1) Without O_SYNC
+
+BUF_SIZE=1024:
+real	0m0,005s
+user	0m0,000s
+sys	0m0,005s
+
+BUF_SIZE=10:
+real	0m0,160s
+user	0m0,000s
+sys	0m0,156s
+
+BUF_SIZE=100:
+real	0m0,019s
+user	0m0,004s
+sys	0m0,014s
+
+BUF_SIZE=10*1024:
+real	0m0,006s
+user	0m0,000s
+sys	0m0,005s
+
+BUF_SIZE=100*1024:
+real	0m0,005s
+user	0m0,000s
+sys	0m0,005s
+
+The bigger buffer size, the faster copying process
+
+2) With O_SYNC
+
+BUF_SIZE=1024:
+real	0m3,466s
+user	0m0,000s
+sys	0m0,578s
+
+BUF_SIZE=10:
+real	6m0,662s
+user	0m0,642s
+sys	0m57,830s
+
+BUF_SIZE=100:
+real	0m35,658s
+user	0m0,029s
+sys	0m5,680s
+
+BUF_SIZE=10*1024:
+real	0m0,336s
+user	0m0,000s
+sys	0m0,063s
+
+BUF_SIZE=100*1024:
+real	0m0,050s
+user	0m0,000s
+sys	0m0,011s
+
+O_SYNC provides I/O file integiry that increases time of execution of program
