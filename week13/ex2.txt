@@ -1,0 +1,12 @@
+ - Recovery:
+Recovery is simple but dangerous approach comparing to others. This method simply kills one or several processes until some of the processes can continue to execute. However, when processes that were killed start to execute again the result of their execution may differ in comparison to the result that had to be if they executed without interruption.
+
+ - Prevention:
+To prevent deadlock we need to prevent one of conditions of deadlock:
+- Mutual-exclusion: it is possible to not assign resource until it is absolutely necessary.
+- Hold-and-wait: process can request all required resources before the beginning of execution, if at least one of resources is not available, process will not allocate resources and will not start. However, processes may not know which resorces they will need during execution. And also resources will not be used optimally.
+- No-preemption: some resources may be forcibly taken from process during execution, but it is almost impossible, or some resources can be virtualized, however, it is impossible to virtualize all resources.
+- Circular wait: process may be allowed to have only one resource at any moment, however, it is not always possible to use this method, or each resource can be numerized and processes can request resources in numerical order.
+
+ - Avoidance:
+Avoidance can be used when processes know in advance which resources they will need during execution, in this case Banker's algorithm can be used. However, usually processes do not know which resources they will need.
