@@ -60,14 +60,7 @@ int main(){
     int **C; // Current allocation,
     int **R; // Request matrix
     FILE *input;
-
-
-
-    // Change name of input file here
-    input = fopen("input_ok.txt", "r");
-
-
-
+    input = fopen("input.txt", "r");
     char string[256];
 
     int p, r; // Number of processes and resources
@@ -106,9 +99,7 @@ int main(){
         for (int i = 0; i < p; i++){
             if (F[i] != 1) {
                 for (int j = 0; j < r; j++){
-                    int req = R[i][j];
-                    int a = A[j];
-                    if (req <= a){
+                    if (R[i][j] <= A[j]){
                         less = 1;
                     } else {
                         less = 0;
@@ -117,15 +108,10 @@ int main(){
                 }
                 if (less == 1){
                     for (int j = 0; j < r; j++){
-                        int c = C[i][j];
-                        int a = A[j];
-                        A[j] += c;
-                        a = A[j];
-                        printf("%d ", a);
+                        A[j] += C[i][j];
                     }
                     F[i] = 1;
                     somethingChanged = 1;
-                    printf("\n");
                 }
             }
         }
